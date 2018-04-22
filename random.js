@@ -1,4 +1,4 @@
-function randomNumber(len = 0) {
+function randomNumber(len = 1) {
   if (len <= 0 || len == null) {
     console.error("Invalid length.");
     return false;
