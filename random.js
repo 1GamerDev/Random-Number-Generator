@@ -1,9 +1,9 @@
 function randomNumber(len = 1) {
-  if (len <= 0 || len == null) {
-    console.error("Invalid length.");
+  if (typeof len != "number") {
     return false;
   }
-  if (typeof len != "number") {
+  if (len <= 0 || len == null) {
+    console.error("Invalid length.");
     return false;
   }
   if (len.toString().includes(".")) {
